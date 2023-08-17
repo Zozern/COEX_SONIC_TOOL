@@ -1,0 +1,19 @@
+{
+    "error_keyword_list":   [
+        "error", 
+        "ERROR", 
+        "Error",
+        "fail", 
+        "Fail",
+        "could not", 
+        "Could not", 
+        "Can't find", 
+        "Permission",
+        "line ", 
+        "Abort", 
+        "abort",
+        "help"
+    ]
+}
+
+

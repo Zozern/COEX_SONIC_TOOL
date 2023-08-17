@@ -1,0 +1,69 @@
+{
+    "Fake_Error_Messages":  {
+        "ERROR":    [
+            "[ERROR] Error Domain=com.apple.osdiags.FactoryProcess.SysConfig Code=4163 \"The requested key does not exist on this device. Unable to read SysConfig for key CFG# with error (0x1043) The requested key does not exist on this device.\" UserInfo={NSLocalizedDescription=The requested key does not exist on this device. Unable to read SysConfig for key CFG# with error (0x1043) The requested key does not exist on this device.}"
+        ],
+
+        "Error":    [
+            "ErrorCode: 0",
+            "Errorcode\":0",
+            "[ERROR] Error Domain=com.apple.osdiags.FactoryProcess.SysConfig Code=4163 \"The requested key does not exist on this device. Unable to read SysConfig for key CFG# with error (0x1043) The requested key does not exist on this device.\" UserInfo={NSLocalizedDescription=The requested key does not exist on this device. Unable to read SysConfig for key CFG# with error (0x1043) The requested key does not exist on this device.}",
+            "common.status = 0 (AciWifiErrorCodeEnum_AciWifiStatusOk)"
+        ],
+
+        "error":    [
+            "error.txNoPll_burstWithOverride=0",
+            "error.txNoPll_duringEnterOffline=0",
+            "error.txNoPll_IrWithLateEOP=0",
+            "error.txfwGenPhyMuted=0",
+            "error.txIrPhyMuted=0",
+            "error.txIrLdoMuted=0",
+            "+ AppleLisaTester cr sys-errors",
+            "Sys error report:",
+            "Lisa enqueue error 0",
+            "Input Report Send error: 0",
+            "Haptic requests error count: 0",
+            "Haptic requests abort count: 0",
+            "Bonn uvd0 error count: 0",
+            "Bonn uvd1 error count: 0",
+            "Bonn scan fifo over written error: 0",
+            "Number of SCE to RTP comm errors : 0"
+        ],
+
+        "line":     [
+            "--- User Entered Options from command line ---",
+            "Trampoline : 0",
+            "Use of uninitialized value in numeric eq (==) at /AppleInternal/Library/sysval/lte_ftm.pl line 3141.",
+            "Use of uninitialized value in concatenation (.) or string at /AppleInternal/Library/sysval/brownout.pl line 98.",
+            "Terminated: 15          minilab -du \"\" \"Actuator\" --playback $LIBPATH/media/alert/Alert_zeros_5s.wav --time $VICTIMTIME",
+            "Killed: 9               alsTester -interval $INTERVAL -gainOverride 4 -slotEnable 255 2>&1 > $LOGFILE",
+            "/AppleInternal/Library/sysval/victim_alerthallq_sample.sh: line 82: kill:",
+            "/AppleInternal/Library/sysval/victim_alerthallq_sample.sh: line 84: kill:",
+            "/AppleInternal/Library/sysval/victim_alerthall_sample.sh: line 85: kill:",
+            "/AppleInternal/Library/sysval/victim_alerthall_sample.sh: line 86: kill:",
+            "/AppleInternal/Library/sysval/victim_alerthall_sample.sh: line 88: kill:"
+        ],
+
+        "fail": [
+            "Load failed: 37: Operation already in progress",
+            "Unload failed: 113: Could not find specified service"
+        ]
+
+    },
+
+    "Errors_Can_Be_Ignored":    {
+        "could not":    [
+            "first pass - could not find data in FDR for PAC"
+        ],
+
+        "Could not":    [
+            "/System/Library/LaunchDaemons/com.apple.CommCenter.plist: Could not find specified service",
+            "/System/Library/LaunchDaemons/com.apple.mediaserverd.plist: Could not find specified service"
+        ],
+        "help":    [
+            "helper"
+        ]  
+    }
+}
+
+

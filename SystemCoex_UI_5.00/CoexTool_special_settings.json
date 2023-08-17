@@ -1,0 +1,133 @@
+{   
+    "DEFAULT_TCPRELAY_PORTS":[20000],
+    "unit_info_text_geometry": {
+        "Connection_Status": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 0,
+            "column": 1
+        },
+        "Config": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 1,
+            "column": 1
+        },
+        "SN": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 2,
+            "column": 1
+        },
+        "Product_Code": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 3,
+            "column": 1
+        },
+        "BB_Region": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 4,
+            "column": 1
+        },
+        "Root": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 5,
+            "column": 1
+        },
+        "SOC": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 6,
+            "column": 1
+        },
+        "Bundle": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 1,
+            "column": 3
+        },
+        "Average_Current": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 2,
+            "column": 3
+        },
+        "Temperature": {
+            "width": 10,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 3,
+            "column": 3
+        },
+        "Voltage": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 4,
+            "column": 3
+        },
+        "C26tool_FwState": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 5,
+            "column": 3
+        },
+        "Station": {
+            "width": 15,
+            "height": 1,
+            "wraplength": 0,
+            "columnspan": 1,
+            "row": 6,
+            "column": 3
+        },
+        "IMU_calibration": {
+            "width": 10,
+            "height": 1,
+            "wraplength": 500,
+            "columnspan": 1,
+            "row": 1,
+            "column": 5
+        },
+        "Alert_calibration": {
+            "width": 10,
+            "height": 1,
+            "wraplength": 500,
+            "columnspan": 1,
+            "row": 2,
+            "column": 5
+        },
+        "Boot-args": {
+            "width": 70,
+            "height": 2,
+            "wraplength": 500,
+            "columnspan": 5,
+            "row": 7,
+            "column": 1
+        }
+    }
+}

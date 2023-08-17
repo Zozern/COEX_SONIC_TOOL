@@ -1,0 +1,61 @@
+{
+    "DEFAULT_TCPRELAY_PORTS":[20000],
+    "ggtool_default_cmd":"ggtool",
+    "c26tool_default_cmd":"c26tool status|grep ^FwState",
+    "boot_args_default_cmd":"nvram -X boot-args",
+    "cat_config_json_defalut_cmd":"cat /var/logs/Astro/config.json",
+    "get_device_code_default_cmd":"gestalt_query -undecorated HWModelStr",
+    "N14y_get_cfg_default_cmd":"sysconfig read -k CFG#",
+    "get_device_sn_default_cmd":"gestalt_query -undecorated SerialNumber",
+    "cat_root_version_txt":"cat /AppleInternal/Library/sysval/version.txt",
+    "bundle_info_default_default_cmd":"sw_vers -buildVersion",
+    "ProductCodeType":
+    {
+        "N140sAP":"N14y",
+        "N140bAP":"N14y",        
+        "N142sAP":"N14y",        
+        "N142bAP":"N14y",
+        "N143sAP":"N14z",
+        "N143bAP":"N14z",
+        "N149sAP":"N14z",
+        "N149bAP":"N14z"
+    
+    },
+    "boot_args_none_command":
+    {
+        "N140sAP": "debug=0x104c04 serial=3 cs_enforcement_disable=1 chg-c26-debug=1 pmu-debug-wake=1 allow_swd_updates=1 spam apfs_edt_rw_mount=1",
+        "N140bAP": "debug=0x104c04 serial=3 cs_enforcement_disable=1 chg-c26-debug=1 pmu-debug-wake=1 allow_swd_updates=1 spam apfs_edt_rw_mount=1",        
+        "N142sAP": "debug=0x104c04 serial=3 cs_enforcement_disable=1 chg-c26-debug=1 pmu-debug-wake=1 allow_swd_updates=1 spam apfs_edt_rw_mount=1",        
+        "N142bAP": "debug=0x104c04 serial=3 cs_enforcement_disable=1 chg-c26-debug=1 pmu-debug-wake=1 allow_swd_updates=1 spam apfs_edt_rw_mount=1",
+        "N143sAP":"debug=0x14e serial=3 amfi=-1 cs_enforcement_disable=1 chg-c26-debug=1 pmu-debug-wake=1 spam apfs_edt_rw_mount=1 wdt=-1 wlan.debug.powerTablesOptional=1",
+        "N143bAP":"debug=0x14e serial=3 amfi=-1 cs_enforcement_disable=1 chg-c26-debug=1 pmu-debug-wake=1 spam apfs_edt_rw_mount=1 wdt=-1 wlan.debug.powerTablesOptional=1",
+        "N149sAP":"debug=0x14e serial=3 amfi=-1 cs_enforcement_disable=1 chg-c26-debug=1 pmu-debug-wake=1 spam apfs_edt_rw_mount=1 wdt=-1 wlan.debug.powerTablesOptional=1",
+        "N149bAP":"debug=0x14e serial=3 amfi=-1 cs_enforcement_disable=1 chg-c26-debug=1 pmu-debug-wake=1 spam apfs_edt_rw_mount=1 wdt=-1 wlan.debug.powerTablesOptional=1"
+    },
+    "pf_unit_delete_parameter":"cs_enforcement_disable=1",
+    "Astro_default_path":"/var/logs/Astro/",
+    "Smokey_default_dir":"/AppleInternal/Diags/Logs/Smokey/",
+    "systemcoex_astro_log_structure":{
+        "jasmine":["karr_jasmine_", "sysval_jasmineCoex", "jasmine.astro", "jasmine_start", "jasmine_end", "systemcoex.db"],
+        "als":["karr_als_", "sysval_alsCoex", "als.astro", "als_start", "als_end", "systemcoex.db"],
+        "dark":["karr_dark_", "sysval_darkCoex", "dark.astro", "dark_start", "dark_end", "systemcoex.db"],
+        "darkarm":["karr_darkarm_", "sysval_darkarmCoex", "darkarm.astro", "darkarm_start", "darkarm_end", "systemcoex.db"],
+        "coal":["coal_", "loadCycler_", "UVLO_", "systemcoex.db", "start_Dali_", "end_Dali_", "puck_unit_sync", "coal.astro"],
+        "karr":["karr_karr_", "sysval_karrCoex", "karr.astro", "karr_start", "karr_end", "systemcoex.db", "charger_puck_sn.txt"],
+        "keva":["karr_keva_", "sysval_kevaCoex", "keva.astro", "keva_start", "keva_end", "systemcoex.db", "charger_puck_sn.txt", "puck_unit_sync"],
+        "pinot":["karr_pinot_", "sysval_pinotCoex", "pinot.astro", "pinot_start", "pinot_end", "systemcoex.db", "puck_unit_sync"],
+        "merlot":["grapenfcsota", "systemcoex.db"],
+        "all":[""]
+    },
+    "systemcoex_smokey_log_structure":[
+        "/AppleInternal/Diags/Logs/Smokey/coexpanda_offline/N143B/*__coex__*",
+        "/AppleInternal/Diags/Logs/Smokey/coexpanda_offline/N143S/*__coex__*",
+        "/AppleInternal/Diags/Logs/Smokey/coexpanda_offline/Smokey.log",
+        "/AppleInternal/Diags/Logs/Smokey/OfflinePanda/N143B/*__coex__*",
+        "/AppleInternal/Diags/Logs/Smokey/OfflinePanda/N143S/*__coex__*",
+        "/AppleInternal/Diags/Logs/Smokey/OfflinePanda/Smokey.log"
+    ],
+    "Alert_Calibration_info_default_cmd":"sysconfig info --key PSCl | grep 'PSCl' | awk '{print $5}'",
+    "IMU_Calibration_info_default_cmd":"spuctl --sensorinfo v2 accel|grep 'Cal matrix'|awk '{print $5,$8,$14}'",
+    "ggtool_keylist":["Temperature", "Voltage", "Flags", "RemainingCapacity", "FullChargeCapacity", "AverageCurrent", "TimeToEmpty", "Qmax", "AveragePower", "OCV_Current", "OCV_Voltage", "CycleCount", "StateOfCharge", "TrueRemainingCapacity", "PassedCharge", "DOD0", "PresentDOD", "DesignCapacity", "IMAX", "NCC", "ResScale", "ITMiscStatus", "IMAX2", "ChemID", "SimRate"]
+}

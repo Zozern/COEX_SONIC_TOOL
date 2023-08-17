@@ -1,0 +1,79 @@
+{
+    "main_window":  {
+        "title": "SystemCoex Sonic Tool",
+        "width": 650,
+        "height": 900,
+        "font_type": "Arial",
+        "font_size": 11,
+        "widget_space_x": 2,
+        "widget_space_y": 2,
+        "modules_space_x": 2,
+        "modules_space_y": 2,
+        "module_border_width": 3,
+        "module_relief_style": "ridge"
+    },
+    "CoexTool_window_layout":{
+        "header GUI":               {   "row": 0,   "column": 0,    "columnspan": 3,    "relative_width": "1/1",    "relative_height": "5/100"  },
+        "Device Information":       {   "row": 1,   "column": 0,    "columnspan": 3,    "relative_width": "1/1",    "relative_height": "30/100" },
+        "Irysnc Systemcoex Logs":   {   "row": 2,   "column": 0,    "columnspan": 2,    "relative_width": "60/100",    "relative_height": "13/100" },
+        "Irysnc Systemcoex Root":   {   "row": 2,   "column": 2,    "columnspan": 1,    "relative_width": "40/100",    "relative_height": "13/100" },
+        "Change Device Boot-args":  {   "row": 3,   "column": 0,    "columnspan": 1,    "relative_width": "5/10",   "relative_height": "20/100" },
+        "Reboot Device":            {   "row": 3,   "column": 1,    "columnspan": 2,    "relative_width": "5/10",   "relative_height": "20/100" },
+        "Check Systemcoex Logs":    {   "row": 4,   "column": 1,    "columnspan": 2,    "relative_width": "5/10",   "relative_height": "20/100" },
+        "Delete Systemcoex data":   {   "row": 4,   "column": 0,    "columnspan": 1,    "relative_width": "5/10",   "relative_height": "20/100" },
+        "Result Output":            {   "row": 5,   "column": 0,    "columnspan": 2,    "relative_width": "1/1",    "relative_height": "5/100" }
+    },
+    "header_GUI_module_layout":{
+        "Quit_button":              {   "button_name": "Quit",          "row": 0,   "column": 0,    "columnspan": 1,    "relative_width": "1/5",    "relative_height": "1/1"    },
+        "Setting_button":           {   "button_name": "Setting",       "row": 0,   "column": 1,    "columnspan": 1,    "relative_width": "1/5",    "relative_height": "1/1"    },
+        "Switch_debugpowr_button":  {   "button_name": "dbgpwr on/off", "row": 0,   "column": 2,    "columnspan": 1,    "relative_width": "1/5",    "relative_height": "1/1"    }
+    },
+    "device_information_module_layout":{
+        "Connection Status":    {   "row": 0,   "column": 0,    "columnspan": 1,    "copy_button": "False", "relative_width": "5/12",   "relative_height": "12/100"    },
+        "Config":               {   "row": 1,   "column": 0,    "columnspan": 1,    "copy_button": "True",  "relative_width": "5/12",   "relative_height": "12/100"    },
+        "SN":                   {   "row": 2,   "column": 0,    "columnspan": 1,    "copy_button": "True",  "relative_width": "5/12",   "relative_height": "12/100"    },
+        "Bundle Overlay":       {   "row": 3,   "column": 0,    "columnspan": 1,    "copy_button": "True",  "relative_width": "5/12",   "relative_height": "12/100"    },
+        "BB Region":            {   "row": 4,   "column": 0,    "columnspan": 1,    "copy_button": "False", "relative_width": "5/12",   "relative_height": "12/100"    },
+        "Product Code":         {   "row": 5,   "column": 0,    "columnspan": 1,    "copy_button": "False", "relative_width": "5/12",   "relative_height": "12/100"    },
+        "Root version":         {   "row": 6,   "column": 0,    "columnspan": 1,    "copy_button": "False", "relative_width": "5/12",   "relative_height": "12/100"    },  
+        "Boot-args":            {   "row": 7,   "column": 0,    "columnspan": 3,    "copy_button": "True",  "relative_width": "1/1",    "relative_height": "16/100"   },
+
+        "State Of Charge":      {   "row": 1,   "column": 1,    "columnspan": 1,    "copy_button": "False", "relative_width": "4/12",   "relative_height": "12/100"    },
+        "Voltage":              {   "row": 2,   "column": 1,    "columnspan": 1,    "copy_button": "False", "relative_width": "4/12",   "relative_height": "12/100"    },
+        "AverageCurrent":       {   "row": 3,   "column": 1,    "columnspan": 1,    "copy_button": "False", "relative_width": "4/12",   "relative_height": "12/100"    },
+        "AveragePower":         {   "row": 4,   "column": 1,    "columnspan": 1,    "copy_button": "False", "relative_width": "4/12",   "relative_height": "12/100"    },
+        "Puck FwState":         {   "row": 5,   "column": 1,    "columnspan": 1,    "copy_button": "False", "relative_width": "4/12",   "relative_height": "12/100"    },
+        "Completed Station":    {   "row": 6,   "column": 1,    "columnspan": 2,    "copy_button": "False", "relative_width": "7/12",   "relative_height": "12/100"    },
+        "IMU Calibration":      {   "row": 1,   "column": 2,    "columnspan": 1,    "copy_button": "False", "relative_width": "3/12",   "relative_height": "12/100"   },
+        "Alert Calibration":    {   "row": 2,   "column": 2,    "columnspan": 1,    "copy_button": "False", "relative_width": "3/12",   "relative_height": "12/100"    },
+        "Moly Calibration":     {   "row": 3,   "column": 2,    "columnspan": 1,    "copy_button": "False", "relative_width": "3/12",   "relative_height": "12/100"    },
+        "Temperature":          {   "row": 5,   "column": 2,    "columnspan": 1,    "copy_button": "False", "relative_width": "3/12",   "relative_height": "12/100"    }
+    },
+    "Delete_Systemcoex_data_module_layout":{
+        "max_column_number": 3
+    },
+    "Change_Device_Boot-args_module_layout":{
+        "max_column_number": 3
+    },
+    "Irysnc_Systemcoex_Logs_module_layout":{
+        "setup_host_target_path_label":         {   "key_name_string":"Setup target host directory path",   "row": 0,   "column": 0,    "columnspan": 1,    "relative_width": "8/10",   "relative_height": "4/14"   },
+        "browse_host_path_frame":               {   "key_name_string": "Target Dir ",                        "row": 1,   "column": 0,    "columnspan": 1,    "relative_width": "8/10",   "relative_height": "5/14"   },
+        "prefix_setup_frame":                   {   "key_name_string": "Prefix Name",                       "row": 2,   "column": 0,    "columnspan": 1,    "relative_width": "8/10",   "relative_height": "5/13"   },
+        "choose_logs_for_irysnc_combobox_frame":{                                                           "row": 0,   "column": 1,    "columnspan": 1,    "relative_width": "2/10",   "relative_height": "4/14"   },
+        "irysnc_logs_button":                   {   "text": "Get Logs",                                     "row": 1,   "column": 1,    "rowspan": 2,       "relative_width": "2/10",   "relative_height": "10/14"  }
+    },
+    "Irysnc_Systemcoex_Root_module_layout":{
+        "browse_root_path_frame":               {   "key_name_string":"browse systemcoex root dir",         "row": 0,   "column": 0,    "columnspan":1,     "relative_width": "1/1",    "relative_height": "1/2"},
+        "irysnc_root_button":                   {   "text": "Install Root",                                 "row": 1,   "column": 0,    "columnspan": 2,    "relative_width": "1/1",    "relative_height": "1/2"  }
+    },
+    "Check_Systemcoex_Logs_module_layout":{
+        "browse_systemcoex_logs_frame": {   "key_name_string": "systemcoex logs directory path",    "row": 0,   "column": 0,    "relative_width": "1/1",    "relative_height": "4/10"   },
+        "find_errors_button":           {   "button_name_string": "Find Errors",                    "row": 1,   "column": 0,    "relative_width": "1/1",    "relative_height": "1/5"    },
+        "check_loadcycler_button":      {   "button_name_string": "Check Loadcycler",               "row": 2,   "column": 0,    "relative_width": "1/1",    "relative_height": "1/5"    },
+        "check_brownout_button":        {   "button_name_string": "Check Brownout",                 "row": 3,   "column": 0,    "relative_width": "1/1",    "relative_height": "1/5"    }
+    },
+    "Reboot_Device_module_layout":{
+        "reboot_button":{   "button_name_string": "Reboot", "row": 0,   "column": 0,    "columnspan": 1,    "relative_width": "1/1",    "relative_height": "1/1"}
+    }
+
+}
